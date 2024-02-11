@@ -7,7 +7,7 @@ sampledata = {
 
     <p>Water, the elixir of life. We gulp it down, splash in it, even cook with it, often taking its purity for granted. But lurking beneath its seemingly innocuous surface, a world of complexity unfolds, where unseen contaminants can wreak havoc on our health and well-being. So, what does "pure" water truly mean? And can we ensure we're getting the good stuff?</p>
 
-    <h3>What Exactly Makes Water "Pure"?</h3>
+    <h2>What Exactly Makes Water "Pure"?</h2>
 
     <p>Purity is a relative term, especially when it comes to water. In its natural state, water collects minerals, organic matter, and even microorganisms as it flows through rivers, lakes, and underground aquifers. While some of these elements enhance its taste and provide essential nutrients, others can harbor harmful bacteria, heavy metals, or chemical pollutants.</p>
 
@@ -19,11 +19,11 @@ sampledata = {
         <li><b>Home filtration systems</b> offer varying levels of purification, from carbon filters targeting chlorine and taste impurities to reverse osmosis systems removing a wider range of contaminants. Choosing the right system depends on your specific water quality concerns and local regulations.</li>
     </ul>
 
-    <h3>Beyond Purity: Understanding the Human Factor</h3>
+    <h2>Beyond Purity: Understanding the Human Factor</h2>
 
     <p>Even "pure" water isn't a guarantee of absolute safety. Contamination can occur after treatment, during storage, or even within our own homes through pipes and storage containers. It's crucial to practice good hygiene and proper water handling techniques to minimize risks.</p>
 
-    <h4>Be a Savvy Water Consumer:</h4>
+    <h3>Be a Savvy Water Consumer</h3>
 
     <ul>
         <li><b>Be informed:</b> Familiarize yourself with your local water quality reports and understand the treatment processes used.</li>
@@ -34,5 +34,12 @@ sampledata = {
 
     <p>Remember, the water you drink shapes your health. Stay informed, make informed choices, and enjoy the life-giving power of pure water with confidence!</p>
 
-    """
+    """,
+
+    'table_of_content': [
+        "# Introduction",
+        "# What Exactly Makes Water \"Pure\"?",
+        "# Beyond Purity: Understanding the Human Factor",
+        "## Be a Savvy Water Consumer"
+    ],
 }
