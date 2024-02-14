@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="638.15961mm"
+   height="143.48828mm"
+   viewBox="0 0 638.15961 143.48828"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="appLayout.svg"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.65588553"
+     inkscape:cx="1167.8867"
+     inkscape:cy="10.672594"
+     inkscape:window-width="1728"
+     inkscape:window-height="1081"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true" /><defs
+     id="defs1">
+	
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</defs><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-607.82819,504.94513)"><rect
+       style="opacity:1;fill:#0d1117;fill-opacity:1;stroke-width:0.27638;stroke-linecap:round"
+       id="rect1"
+       width="638.15961"
+       height="143.48828"
+       x="-1245.9878"
+       y="361.45685"
+       inkscape:export-filename="rect1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       ry="0"
+       transform="scale(-1)" /><g
+       id="g24"
+       transform="translate(0,-1.3731384)"><rect
+         style="fill:#161b22;fill-opacity:1;stroke:#ffffff;stroke-width:0.694;stroke-linecap:round;stroke-dasharray:none"
+         id="rect2"
+         width="128"
+         height="128"
+         x="615.91931"
+         y="-496.854"
+         rx="5.9979587"
+         ry="5.9979587" /><text
+         xml:space="preserve"
+         style="font-weight:500;font-size:19.7556px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;letter-spacing:0px;text-anchor:start;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.01146;stroke-linecap:round;stroke-dasharray:none"
+         x="637.25116"
+         y="-433.89157"
+         id="text2"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:19.7556px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:7.01146"
+           x="637.25116"
+           y="-433.89157"
+           id="tspan3">Frontend</tspan></text><text
+         xml:space="preserve"
+         style="font-weight:500;font-size:7.76111px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;letter-spacing:1.32292px;text-anchor:start;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.01146;stroke-linecap:round;stroke-dasharray:none"
+         x="659.68695"
+         y="-417.53412"
+         id="text2-6"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:7.76111px;font-family:Inter;-inkscape-font-specification:'Inter Semi-Bold';text-align:start;letter-spacing:1.32292px;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:7.01146"
+           x="659.68695"
+           y="-417.53412"
+           id="tspan3-2">NEXT.JS</tspan></text></g><g
+       id="g22"
+       transform="translate(0,1.3731384)"><rect
+         style="fill:#161b22;fill-opacity:1;stroke:#ffffff;stroke-width:0.694;stroke-linecap:round;stroke-dasharray:none"
+         id="rect2-53"
+         width="128"
+         height="128"
+         x="863.08148"
+         y="-499.60028"
+         rx="5.9979587"
+         ry="5.9979587" /><text
+         xml:space="preserve"
+         style="font-weight:500;font-size:7.76111px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;letter-spacing:1.32292px;text-anchor:start;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.01146;stroke-linecap:round;stroke-dasharray:none"
+         x="890.96173"
+         y="-420.27631"
+         id="text2-6-9"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:7.76111px;font-family:Inter;-inkscape-font-specification:'Inter Semi-Bold';text-align:start;letter-spacing:1.32292px;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:7.01146"
+           x="890.96173"
+           y="-420.27631"
+           id="tspan6">DJANGO + DRF</tspan></text><text
+         xml:space="preserve"
+         style="font-weight:500;font-size:19.7556px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;letter-spacing:0px;text-anchor:start;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.01146;stroke-linecap:round;stroke-dasharray:none"
+         x="886.23383"
+         y="-436.63376"
+         id="text2-5"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:19.7556px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:7.01146"
+           x="886.23383"
+           y="-436.63376"
+           id="tspan3-6">Backend</tspan></text></g><g
+       id="g20"
+       transform="translate(0,-1.0261536)"><rect
+         style="fill:#161b22;fill-opacity:1;stroke:#ffffff;stroke-width:0.694;stroke-linecap:round;stroke-dasharray:none"
+         id="rect2-53-2"
+         width="128"
+         height="128"
+         x="1110.2437"
+         y="-497.20099"
+         rx="5.9979587"
+         ry="5.9979587" /><text
+         xml:space="preserve"
+         style="font-weight:500;font-size:7.76111px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;letter-spacing:1.32292px;text-anchor:start;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.01146;stroke-linecap:round;stroke-dasharray:none"
+         x="1149.4664"
+         y="-417.88751"
+         id="text2-6-9-5"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:7.76111px;font-family:Inter;-inkscape-font-specification:'Inter Semi-Bold';text-align:start;letter-spacing:1.32292px;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:7.01146"
+           x="1149.4664"
+           y="-417.88751"
+           id="tspan6-9">MONGODB</tspan></text><text
+         xml:space="preserve"
+         style="font-weight:500;font-size:19.7556px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;letter-spacing:0px;text-anchor:start;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:7.01146;stroke-linecap:round;stroke-dasharray:none"
+         x="1128.9728"
+         y="-434.22391"
+         id="text2-5-7"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:19.7556px;font-family:Inter;-inkscape-font-specification:'Inter Medium';text-align:start;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:7.01146"
+           x="1128.9728"
+           y="-434.22391"
+           id="tspan3-6-0">Database</tspan></text></g><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.7611px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';letter-spacing:0px;fill:none;stroke:#ffffff;stroke-width:0.693999;stroke-linecap:round;stroke-dasharray:none"
+       x="1028.7339"
+       y="-437.92307"
+       id="text14-7"><tspan
+         sodipodi:role="line"
+         id="tspan14-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';letter-spacing:0px;fill:#ffffff;stroke:none;stroke-width:0.694"
+         x="1028.7339"
+         y="-437.92307" /></text><g
+       id="g23"
+       transform="translate(0,-0.694)"><path
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.694;stroke-linecap:round;stroke-dasharray:none"
+         d="m 755.62774,-432.50699 h 95.74532"
+         id="path13"
+         sodipodi:nodetypes="cc" /><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.5833px;font-family:Inter;-inkscape-font-specification:'Inter Semi-Bold';letter-spacing:1.71295px;fill:none;stroke:#ffffff;stroke-width:0.898609;stroke-linecap:round;stroke-dasharray:none"
+         x="769.98926"
+         y="-440.03064"
+         id="text14"><tspan
+           sodipodi:role="line"
+           id="tspan14"
+           style="font-size:10.5833px;fill:#ffffff;stroke:none;stroke-width:0.898611"
+           x="769.98926"
+           y="-440.03064">REST APIs</tspan></text><g
+         id="g19"
+         transform="matrix(1.1404808,0,0,1.1404808,-96.559032,58.959396)"><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:5.40739px;font-family:Inter;-inkscape-font-specification:'Inter Semi-Bold';letter-spacing:0.92172px;fill:none;stroke:#ffffff;stroke-width:0.483531;stroke-linecap:round;stroke-dasharray:none"
+           x="772.23254"
+           y="-421.11343"
+           id="text14-1"><tspan
+             sodipodi:role="line"
+             style="fill:#ffffff;stroke:none;stroke-width:0.483531"
+             x="772.23254"
+             y="-421.11343"
+             id="tspan15">DJANGO</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#ffffff;stroke:none;stroke-width:0.483531"
+             x="772.23254"
+             y="-414.35419"
+             id="tspan19">CORS HEADER</tspan></text><path
+           class="st0"
+           d="m 758.5423,-419.5679 c 0,2.98237 2.90844,4.49575 4.1556,5.0084 l 0.0443,0.0198 c 0.0937,0.0444 0.20212,0.0444 0.29084,0 l 0.0443,-0.0198 c 1.25211,-0.51265 4.15562,-2.02603 4.15562,-5.0084 v -3.99294 c 0,-0.15282 -0.1035,-0.28592 -0.25142,-0.32042 l -4.01758,-0.99576 c -0.0543,-0.0148 -0.1084,-0.0148 -0.15775,0 l -4.01757,0.99576 c -0.14789,0.0345 -0.25141,0.1676 -0.25141,0.32042 m 8.0401,3.99294 c 0,2.53871 -2.52886,3.88941 -3.68238,4.3725 -1.15845,-0.48309 -3.68238,-1.83379 -3.68238,-4.3725 v -3.7366 l 3.68238,-0.91197 3.68238,0.91197 z"
+           id="path11"
+           style="fill:#ffffff;stroke-width:0.0492954" /></g></g><path
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.694;stroke-linecap:round;stroke-dasharray:none"
+       d="m 1002.7899,-433.20099 h 95.7453"
+       id="path13-9"
+       sodipodi:nodetypes="cc" /><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.66194px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';letter-spacing:0px;fill:#ffffff;stroke:none;stroke-width:0.436856;stroke-linecap:round;stroke-dasharray:none"
+       x="1012.7228"
+       y="-441.46027"
+       id="text18"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         style="stroke-width:0.436857"
+         x="1012.7228"
+         y="-441.46027">mongodb://container</tspan></text></g><style
+     type="text/css"
+     id="style1">
+	.st0{fill:#009FE3;}
+</style></svg>
