@@ -10,19 +10,18 @@
 
 .article_header::after {
     content: '';
-    border: 1px solid red;
-    height: 20vh;
-    transform: translate(-10vh,-10vh);
-    width: 120vw;
-    /* min-width: 1000px; */
+    /* border: 1px solid red; */
+    height: 25vh;
+    transform: translate(-10vw,-10vh);
+    width: 110vw;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     background-image: 
-    radial-gradient(at 20% 0%, #a73be1AA 0px, transparent 70%),
-    radial-gradient(at 70% 0%, #3584E4AA 0px, transparent 70%);
-    filter: blur(200px) saturate(150%);
+    radial-gradient(at 10% 50%, #ad3ee955 0px, transparent 70%),
+    radial-gradient(at 90% 0%, #4197ffaa 0px, transparent 70%);
+    filter: blur(20px) saturate(150%);
 }
 
 aside {
@@ -42,9 +41,6 @@ aside {
 .author span { text-decoration: underline; }
 
 .article_container {
-
-
-
     --gap : calc(var(--side-margin) * 3);
 
     padding-block: var(--side-margin);
@@ -145,14 +141,28 @@ aside {
     position: relative;
 }
 
-aside .table_of_content {
+aside .sticky {
     position: static;
     width: 100%;
-    top: 5em;    
+    top: 5em;
+    display: grid;
+    gap: var(--side-margin);
 }
-
 
 aside ul li[data-hierarchy="2"] {margin-left: 1.5ch;}
 
 aside ul li[data-hierarchy="3"] {margin-left: 3ch;}
 
+aside .toolkit .edit_button {
+    padding: 0.75ch 0.75em;
+    border: 1px solid hsl(276, 78%, 38%);
+    border-radius: 0.5ch;
+    background-color: transparent;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+aside .toolkit .edit_button:hover{
+    background-color: hsla(276, 78%, 38%, 0.1);
+    cursor: pointer;
+}

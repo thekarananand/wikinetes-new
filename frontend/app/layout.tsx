@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { inter } from '@/font/inter.js';
 import "@/styles/design_lib.css";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "WikiNetes",
