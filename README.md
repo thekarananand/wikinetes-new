@@ -9,7 +9,11 @@ WikiNetes is a free online article sharing platform service.
 ## Tech Stack 
 
 - **Frontend** : Next.js
-- **Backend** : Django + Django Rest Framework
+
+- **Backend** :
+	+ Django + Django Rest Framework
+	+ PyMongo
+
 - **Database** : MongoDB
 
 ## Deployment (or Test Drive)
@@ -24,6 +28,7 @@ WikiNetes is a free online article sharing platform service.
 
 + **Old Stuff**
 	- Implement DB
+	- DB interface function
 	- MD to HTML
 	- Build Editor
 	- Build Basic Welcome Page
@@ -37,6 +42,3 @@ WikiNetes is a free online article sharing platform service.
 	- Config Files for Kubernetes
 	- Production Branch
 	- GitHub Action Pipeline to make containers
-
-
-

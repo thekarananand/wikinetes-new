@@ -1,4 +1,4 @@
-# Wikinetes (Frontend)
+# Wikinetes (Backend)
 
 - This is a **Django** Project
 
