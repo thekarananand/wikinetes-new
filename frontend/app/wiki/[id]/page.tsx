@@ -32,6 +32,9 @@ function ElementTableOfContent ( topic: any ) {
             topic = topic.substring(1)
             hierarchy += 1
         } else {
+            if ( topic.substring(0,1) == ' ') {
+                return ( <li data-hierarchy={hierarchy}>{topic.substring(1)}</li> )
+            }
             return ( <li data-hierarchy={hierarchy}>{topic}</li> )
         }
     }
