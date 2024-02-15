@@ -35,6 +35,7 @@ WikiNetes is a free online article sharing platform service.
 	- Build Nav
 
 + **Newer Stuff**
+    - Remove Hard Coded, IPs for DB 
 	- Implement Auth
 	- Volumes & Persistence for DB
 	- Config Files for Docker Compose
