@@ -1,5 +1,11 @@
 from rest_framework import serializers
 
+class serialize_article_list(serializers.Serializer):
+
+    id = serializers.CharField(required=True, max_length=24)
+    title = serializers.CharField(required=True, max_length=150)
+    author = serializers.CharField(required=True, max_length=150)
+
 class serialize_wiki_article_view(serializers.Serializer) :
     title = serializers.CharField(required=True, max_length=150)
     author = serializers.CharField(required=True, max_length=50)
