@@ -13,7 +13,7 @@ sampledata = [
     {
         'title': 'How to Hack Google',
         'author': 'Karan Anand',
-        'article_html_content': """# I don't Know
+        'md_content': """# I don't Know
 
 Water, the elixir of life. We gulp it down, splash in it, even cook with it, often taking its purity for granted. But lurking beneath its seemingly innocuous surface, a world of complexity unfolds, where unseen contaminants can wreak havoc on our health and well-being. So, what does "pure" water truly mean? And can we ensure we're getting the good stuff?
         """,
@@ -24,7 +24,7 @@ Water, the elixir of life. We gulp it down, splash in it, even cook with it, oft
     {
         'title': 'H2: H2O, Oh No! Unraveling the Mysteries of Water Purity?',
         'author': 'ChatGPT & Karan Anand',
-        'article_html_content': """# Introduction
+        'md_content': """# Introduction
 
 Water, the elixir of life. We gulp it down, splash in it, even cook with it, often taking its purity for granted. But lurking beneath its seemingly innocuous surface, a world of complexity unfolds, where unseen contaminants can wreak havoc on our health and well-being. So, what does "pure" water truly mean? And can we ensure we're getting the good stuff?
 
