@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import Script from "next/script";
+import Link from "next/link";
 
 const BASE_URL: string = "http://127.0.0.1:8000/";
 
@@ -22,12 +23,12 @@ const ArticleList = (list: any) => {
 
 
         <ul>
-            { list.map( ( article: object ) => (
-                <li>
-                    <a href={BASE_URL + 'wiki/' + article.id}>
+            { list.map( ( article: object, index: number ) => (
+                <li key={index}>
+                    <Link href={'./wiki/' + article.id}>
                         <h3>{article.title}</h3>
                         <p>{article.author}</p>
-                    </a>
+                    </Link>
                 </li>
             ))}
         </ul>

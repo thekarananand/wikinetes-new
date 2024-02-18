@@ -8,7 +8,7 @@ const BASE_URL: string = "http://127.0.0.1:8000/";
 
 async function getArticle(id: number) {
 
-    const res = await fetch(BASE_URL + String(id) + "?format=json");
+    const res = await fetch(BASE_URL + 'wiki/' + String(id) + "?format=json");
     
     if (!res.ok) {
         throw new Error("Failed to fetch data");
@@ -43,11 +43,9 @@ function ElementTableOfContent ( topic: any ) {
 
 function TableOfContent ( topic_list: any ) {
 
-    let index: number = 1
-
     return (
         <ul>
-            { topic_list['topic_list'].map( ( element: string ) => (
+            { topic_list['topic_list'].map( ( element: string, index: number ) => (
                 <ElementTableOfContent key={index++} topic={element} />
             ))}
         </ul>
@@ -72,7 +70,7 @@ export default async function ArticleView({ params }: { params: { id: number } }
                         </div>
                     </div>
 
-                    <div className="article_body" dangerouslySetInnerHTML={ createMarkup( data.article_html_content ) }/>
+                    <div className="article_body" dangerouslySetInnerHTML={ createMarkup( data.html_content ) }/>
 
                 </article>
                 <aside>

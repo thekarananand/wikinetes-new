@@ -1,4 +1,7 @@
 import pymongo
+from bson.objectid import ObjectId
+
+from .md2html import md2html
 
 # Create/Access MongoClient to connect to Mongo Contianer
 mongo_container = pymongo.MongoClient( 'localhost' , 80 )
@@ -28,11 +31,20 @@ def fetch_article_list():
 
         article_list.append(list_entry)
 
-    print( article_list )
     return( article_list )
 
-def fetch_article():
-    pass
+def fetch_article_view(id):
+    article = col_articles.find_one({'_id': ObjectId(id)}, { '_id': False, 'title': True, 'author': True, 'md_content': True, 'table_of_content': True })
+
+    print(article)
+
+    print(article["md_content"])
+
+    article["html_content"] = md2html( article["md_content"] )
+
+    article.pop("md_content")
+
+    return(article)
 
 def fetch_markdown():
     pass
