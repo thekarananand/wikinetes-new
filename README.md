@@ -27,14 +27,16 @@ WikiNetes is a free online article sharing platform service.
 ### TO-DO
 
 + **Old Stuff**
-	- Implement DB
-	- DB interface function
-	- MD to HTML
+	- ~~Implement DB~~
+	- ~~DB interface function~~
+	- ~~MD to HTML~~
 	- Build Editor
-	- Build Basic Welcome Page
+	- ~~Build Basic Welcome Page~~
 	- Build Nav
 
 + **Newer Stuff**
+	- Add supported MD format guide
+	- Make Welcome page look good 
     - Remove Hard Coded, IPs for DB 
 	- Implement Auth
 	- Volumes & Persistence for DB
