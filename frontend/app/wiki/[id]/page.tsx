@@ -1,8 +1,8 @@
 // CSS
 import "@/styles/article_view.css";
 
-// Font 
-import { inter } from '@/font/inter.js';
+// Next Component
+import Link from "next/link";
 
 const BASE_URL: string = "http://127.0.0.1:8000/";
 
@@ -82,10 +82,9 @@ export default async function ArticleView({ params }: { params: { id: number } }
 
                         <section className="toolkit">
                             <h3>Toolkit</h3>
-                            <form action={ BASE_URL } method="post">
-                                <input type="hidden" name="id" value="1" />
-                                <input className={inter.className + " " + "edit_button"} type="submit" value="Edit" />
-                            </form>
+                            <div className="flex">
+                                <Link href= { '/wiki/'+id+'/edit' }  className="btn" >Edit</Link>
+                            </div>
                         </section>
                     </div>
 

@@ -36,25 +36,18 @@ aside {
     line-height: 130%;
 }
 
-
-
 .author span { text-decoration: underline; }
 
 .article_container {
-    --gap : calc(var(--side-margin) * 3);
 
     padding-block: var(--side-margin);
 
-    gap: var(--gap);
+    gap: var(--section-gap);
 
-    grid-template-columns: 1fr var(--width-table-of-content);
-    width: min(
-        calc( 100vw - 2 * var(--side-margin) ), 
-        calc( 70ch + var(--gap) + var(--width-table-of-content) )
-    );
+    grid-template-columns: 1fr var(--width-aside);
+
+    width: var(--width-main)
 }
-
-
 
 @media (width < 800px) {
 
@@ -120,14 +113,13 @@ aside ul { list-style: none; }
 
 aside ul li {
 
-    --color: hsl(276, 78%, 38%);
 
     box-sizing: border-box;
     padding: 0.1em 1ch;
     margin-block: 10px;
-    border-left: 1px solid var(--color);
+    border-left: 2px solid hsl(var(--hsl-accent));
 
-    color: var(--color);
+    color: hsl(var(--hsl-accent));
 
     font-size: 1.1em;
     text-wrap: balance;
@@ -152,17 +144,3 @@ aside .sticky {
 aside ul li[data-hierarchy="2"] {margin-left: 1.5ch;}
 
 aside ul li[data-hierarchy="3"] {margin-left: 3ch;}
-
-aside .toolkit .edit_button {
-    padding: 0.75ch 0.75em;
-    border: 1px solid hsl(276, 78%, 38%);
-    border-radius: 0.5ch;
-    background-color: transparent;
-    font-size: 0.9em;
-    font-weight: 500;
-}
-
-aside .toolkit .edit_button:hover{
-    background-color: hsla(276, 78%, 38%, 0.1);
-    cursor: pointer;
-}

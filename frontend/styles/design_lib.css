@@ -2,7 +2,14 @@
 
 :root {
     --side-margin: 20px;
-    --width-table-of-content: 30ch;
+    --width-aside: 30ch;
+    --section-gap: calc(var(--side-margin) * 3);
+    --width-main: min(
+        calc( 100vw - 2 * var(--side-margin) ), 
+        calc( 70ch + var(--section-gap) + var(--width-aside) )
+    );
+
+    --hsl-accent: 280, 80%, 55%;
 }
 
 * {
@@ -22,8 +29,30 @@ main {
     max-width: 100vw;
     overflow-x: hidden;
 }
+/* Components */
+
+.btn {
+    padding: 0.75ch 0.75em;
+    border: 1px solid hsl(276, 78%, 38%);
+    border-radius: 0.5ch;
+    background-color: transparent;
+    /* font-size: 0.9em; */
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    width: max-content;
+    font-size: 1.1em;
+}
+
+.btn:hover{
+    background-color: hsla(276, 78%, 38%, 0.1);
+    cursor: pointer;
+}
 
 /* Quick Classes */
+
+.block { display: block; }
+.inline { display: inline; }
 
 .flex { display: flex; }
 .jcc  { justify-content: center; }
@@ -31,4 +60,8 @@ main {
 
 .flex-v { display: flex; flex-direction: column;}
 
+.flex-wrap { flex-wrap: wrap; }
+
 .grid { display: grid; }
+.pic {place-items: center;}
+
