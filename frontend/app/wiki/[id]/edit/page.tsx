@@ -1,5 +1,5 @@
 // CSS
-import "@/styles/article_edit.css";
+import "@/styles/article-edit.css";
 
 // Next Component
 import Link from "next/link";
@@ -31,13 +31,13 @@ export default async function ArticleEdit({ params }: { params: { id: string } }
 
             
 
-            <section id='form' className="grid">
+            <form className="grid">
 
                 <div id="top-bar" className="flex-v jcc">
                     
                     <h1 className="block">Edit Article</h1>
 
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap jcsb">
                         <Link href={ '/wiki/' + id + '/' } className="btn block">Back to Article</Link>
                         <button className={inter.className + " btn margin-left-auto" }>Save Changes</button>
                     </div>
@@ -45,20 +45,20 @@ export default async function ArticleEdit({ params }: { params: { id: string } }
 
                 </div>
 
-                <label htmlFor="title">Title</label>
+                <div className="flex aic"><label htmlFor="title">Title</label></div>
                 <input name="title" id="title" type="text" className={ inter.className } defaultValue={ data.title }/>
 
-                <label htmlFor="author">Author</label>
+                <div className="flex aic"><label htmlFor="author">Author</label></div>
                 <input name="author" id="author" type="text" className={ inter.className } defaultValue={ data.author }/>
 
                 <div className="label-and-description">
                     <label htmlFor="md_content">Article Content</label>
-                    <p className="description">Basic Markdown Support Available, <Link href='/'>Know More</Link></p>
+                    <p className="description">Basic Markdown Support Available, <Link href='/help/markdown'>Know More</Link></p>
                 </div>
                 <textarea name="md_content" id="md_content" className={ jetbrain_mono.className }>
                     { data.md_content }
                 </textarea>
-            </section>
+            </form>
         </main>
 
     );

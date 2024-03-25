@@ -1,6 +1,11 @@
 // import Image from "next/image";
-import Script from "next/script";
+// import Script from "next/script";
+
+import "@/styles/home-page.css";
+
 import Link from "next/link";
+
+import { inter } from '@/font/inter.js';
 
 const BASE_URL: string = "http://127.0.0.1:8000/";
 
@@ -20,18 +25,37 @@ const ArticleList = (list: any) => {
     list  = list["list"]
 
     return (
+        <main>
+            <section id="hero" className="flex-v jcc aic">
+                <h1>
+                    Explore, Learn, Share, <br />
+                    The Power of Knowledge.
+                </h1>
+                <p>
+                    Dive into a world of Information with WikiNetes, where the community <br /> curates articles on any topic imaginable.
+                </p>
+                <form action="">
+                    <input type="text" name="" id="" className={ inter.className } placeholder="Search WikiNetes..."/>
+                    <input type="submit" value="Search" className={ inter.className }/>
+                </form>
+            </section>
+            <section id="list" className="flex jcc aic">
+                <div>
+                    <h2>Hot Articles</h2>
+                    <ul className="grid">
+                        { list.map( ( article: object, index: number ) => (
+                            <li key={index}>
+                                <Link href={'./wiki/' + article.id}>
+                                    <h3 className="title">{article.title}</h3>
+                                    <p className="author">{article.author}</p>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+        </main>
 
-
-        <ul>
-            { list.map( ( article: object, index: number ) => (
-                <li key={index}>
-                    <Link href={'./wiki/' + article.id}>
-                        <h3>{article.title}</h3>
-                        <p>{article.author}</p>
-                    </Link>
-                </li>
-            ))}
-        </ul>
     )
 }
 

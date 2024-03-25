@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { inter } from '@/font/inter.js';
-import "@/styles/design_lib.css";
+import "@/styles/core-styles.css";
 
 
-export const metadata: Metadata = {
+export  const metadata: Metadata = {
     title: "WikiNetes",
     description: "WikiNetes is a free online article sharing platform service.",
 };

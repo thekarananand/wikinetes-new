@@ -1,0 +1,130 @@
+section#hero {
+    height: 70vh;
+    gap: 25px;
+
+    margin-bottom: 5vh;
+}
+
+section#hero h1 {
+    margin-top: 5vh;
+    color: hsl(var(--hsl-em1));
+    font-size: 3.6em;
+    text-align: center;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+main::after {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    content: '';
+    height: 70vh;
+    width: max(100vw, 1300px);
+    background-image: 
+    radial-gradient(at 50% 0%, hsla(var(--hsl-accent), 0.15) 0px, transparent 70%);
+    z-index: -1;
+}
+
+section#hero p {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 160%;
+    margin-bottom: 30px;
+}
+
+section#hero form {
+    position: relative;
+    height: min-content;
+    width:  min(
+        60ch,
+        calc(100vw - 4 * var(--side-margin))
+    );
+    margin-top: 50px;
+
+}
+
+section#hero form input[type="text"],
+section#hero form input[type="submit"] {
+    font-size: 1.0em;
+    
+}
+
+section#hero form input[type="text"] {
+    box-sizing: border-box;
+    padding: calc(1.4ch + 1px) 1em;
+    border-radius: calc(1.4ch + 1px);
+    width: 100%;
+    background-color: hsla(var(--hsl-em1), 0.15);
+    border: none;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+section#hero form input[type="submit"] {
+    padding: 0.9ch 1em;
+    position: absolute;
+    right: 0.5ch;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 1ch ;
+    border: 1px solid hsla(var(--hsl-un-em), 0.4);
+    /* border: none; */
+    background-color: hsl(var(--hsl-bg));
+    cursor: pointer;
+}
+
+section#hero form input:focus-visible {
+    outline: 1px solid hsl(var(--hsl-text))
+}
+
+section#list div {
+    width: var(--width-main);
+}
+
+section#list h2 {
+    margin-bottom: 1ch;
+    font-weight: 500;
+}
+
+section#list div {
+    margin-bottom: 2ch;
+}
+
+section#list div ul{
+    list-style-type: none;
+    gap: 2ch;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section#list div ul li{
+    height: 7em;
+}
+
+section#list div ul li a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(var(--hsl-em1), 0.15);
+    padding: 1.4ch 1em;
+    border-radius: 1.4ch;
+}
+
+section#list div ul li .author{
+    color: hsla(var(--hsl-em1), 0.8);
+    bottom: 1.4ch;
+    font-size: 0.9em;
+}
+
+section#list div ul li .title{
+    color: hsl(var(--hsl-text));
+    line-height: 140%;
+    font-weight: 600;
+    margin-bottom: auto;
+    font-size: 1.1em;
+
+}

@@ -1,0 +1,78 @@
+main > div {
+    margin-block: 10vh;
+    box-sizing: border-box;
+    align-items: stretch;
+
+}
+
+.article-header {
+    min-height: 40vh;
+    border-block: 1px solid hsla(var(--hsl-em1), 0.5); 
+    margin-bottom: 10vh;
+    padding-block: 2ch;
+}
+
+.article-header h1 {
+
+    font-size: 3em;
+    text-align: start;
+    text-wrap: balance;
+    margin-bottom: 2rem;
+}
+
+
+.article-header .metadata span {
+    text-decoration: underline;
+}
+
+aside {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: calc(50vh + 2.5rem);
+
+}
+
+aside > div {
+    align-self: start;
+    position: sticky;
+    top: 0;
+    height: max-content;
+    z-index: 1;
+}
+
+aside > div > * {
+    margin-bottom: 4ch;
+}
+
+aside .Table_of_Content{
+    display: block;
+}
+
+aside .Table_of_Content ul {
+    list-style-type: none;
+}
+
+aside .Table_of_Content li {
+    padding: 0.75ch 0.75em;
+    margin-block: 1ch;
+
+    border-left: 2px solid hsl(var(--hsl-em2));
+}
+
+aside .Table_of_Content li[data-hierarchy="2"] {
+    margin-left: 2ch;
+}
+
+aside .Table_of_Content li[data-hierarchy="3"] {
+    margin-left: 4ch;
+}
+
+aside .Toolkit .flex{
+    margin-block: 1ch;
+}
+
+aside .Toolkit .btn{
+    font-size: 0.9em;
+}
+
+

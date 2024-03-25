@@ -1,0 +1,34 @@
+main > div {
+    width: var(--width-main);
+    grid-template-columns: 1fr var(--width-aside);
+    gap: 5ch;
+}
+
+
+article p,
+article li {
+    line-height: 160%;
+    margin-block: 1.5ch;
+    text-align: justify;
+    font-size: 1em;
+
+}
+
+article h2,
+article h3,
+article h4,
+article h5 {
+    margin-block: 2.5rem 1rem;
+    text-align: start;
+    text-wrap: balance;
+}
+
+article h2 { font-size: 1.8em; }
+
+article h3 { font-size: 1.5em; }
+
+article h4 { font-size: 1.3em; }
+
+article ul {
+    margin-left: 2ch;
+}

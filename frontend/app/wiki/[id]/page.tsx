@@ -1,5 +1,6 @@
 // CSS
-import "@/styles/article_view.css";
+import "@/styles/article-view.css";
+import "@/styles/readable-article.css";
 
 // Next Component
 import Link from "next/link";
@@ -59,13 +60,13 @@ export default async function ArticleView({ params }: { params: { id: number } }
 
     return (
         <main className="flex jcc">
-            <div className="grid article_container">
+            <div className="grid">
                 <article>
 
-                    <div className="article_header flex-v jcc">
+                    <div className="article-header flex-v jcsb">
                         <h1>{ data.title }</h1>
 
-                        <div className='author'>
+                        <div className='metadata'>
                             Written by: <span>{ data.author }</span>
                         </div>
                     </div>
@@ -73,22 +74,21 @@ export default async function ArticleView({ params }: { params: { id: number } }
                     <div className="article_body" dangerouslySetInnerHTML={ createMarkup( data.html_content ) }/>
 
                 </article>
+
                 <aside>
-                    <div className="sticky">
+                    <div>
                         <section className="Table_of_Content">
                             <h3>Table of Content</h3>
                             <TableOfContent topic_list={ data.table_of_content } />
                         </section>
 
-                        <section className="toolkit">
+                        <section className="Toolkit">
                             <h3>Toolkit</h3>
                             <div className="flex">
                                 <Link href= { '/wiki/'+id+'/edit' }  className="btn" >Edit</Link>
                             </div>
                         </section>
                     </div>
-
-
                 </aside>
             </div>
 
