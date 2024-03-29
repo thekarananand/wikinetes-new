@@ -70,8 +70,9 @@ main {
 .inline { display: inline; }
 
 .flex { display: flex; }
-.jcc  { justify-content: center; }
-.jcsb  { justify-content: space-between; }
+.jcc { justify-content: center; }
+.jcsb { justify-content: space-between; }
+.flex-r { flex-direction: row-reverse; }
 .aic  { align-items: center; }
 
 .flex-v { display: flex; flex-direction: column;}

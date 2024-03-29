@@ -1,3 +1,5 @@
+from rest_framework import status
+
 from django.shortcuts import render
 
 from rest_framework.decorators import api_view
@@ -20,14 +22,20 @@ def article_view(request, id):
         return Response(requested_article.data)
     return Response(requested_article.errors)
 
-@api_view(['GET'])
+@api_view(['GET', 'POST', 'OPTIONS'])
 def article_edit(request, id):
     if request.method == 'GET':
         article_edit_data = serialize_article_edit( data=fetch_article_edit(id) )
         if article_edit_data.is_valid():
             return Response(article_edit_data.data)
 
-    # elif request.method == 'POST':
-    #     return Response()
+    elif request.method == 'POST':
+        article_edit_data = serialize_article_edit( data=request.data )
+        print(request.data)
+        if article_edit_data.is_valid():
+            print(article_edit_data.data)
+            return Response(article_edit_data.data, status=status.HTTP_201_CREATED)
+        return Response(article_edit_data.errors, status=status.HTTP_201_CREATED)
+        return Response(article_edit_data.errors, status=status.HTTP_400_BAD_REQUEST)
     
-    Response(markdown.error)
+    # Response(markdown.error)
