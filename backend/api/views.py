@@ -22,14 +22,14 @@ def article_view(request, id):
         return Response(requested_article.data)
     return Response(requested_article.errors)
 
-@api_view(['GET', 'POST', 'OPTIONS'])
+@api_view(['GET', 'PUT', 'OPTIONS'])
 def article_edit(request, id):
     if request.method == 'GET':
         article_edit_data = serialize_article_edit( data=fetch_article_edit(id) )
         if article_edit_data.is_valid():
             return Response(article_edit_data.data)
 
-    elif request.method == 'POST':
+    elif request.method == 'PUT':
         article_edit_data = serialize_article_edit( data=request.data )
         print(request.data)
         if article_edit_data.is_valid():

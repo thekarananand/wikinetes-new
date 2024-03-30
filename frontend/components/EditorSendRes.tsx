@@ -1,7 +1,7 @@
 const EditorSendRes = async ( resUrl:string, title:string, author:string, md_content:string ) => {
 
     const res = await fetch(resUrl, {
-        method: 'POST',
+        method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
             title: title , 

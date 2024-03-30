@@ -5,6 +5,7 @@ import { useState } from "react";
 
 // Next Component
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
 
 // Component Imports
 import EditorSendRes from "@/components/EditorSendRes";
@@ -15,10 +16,13 @@ import { jetbrain_mono } from '@/font/jetbrain_mono.js';
 
 const Editor = ( props: {
     resUrl:string ,
+    redUrl:string ,
     initTitle:string,
     initAuthor:string,
     initMD:string 
 }) => {
+
+    const router = useRouter()
 
     const [title, setTitle] = useState(props.initTitle)
     const [author, setAuthor] = useState(props.initAuthor)
@@ -36,8 +40,10 @@ const Editor = ( props: {
                         {/* <Link href={'/wiki/' + id + '/'} className="btn block">Back to Article</Link> */}
                         <button
                             className={inter.className + " btn margin-left-auto"}
-                            onClick={ () => {
-                                EditorSendRes( props.resUrl, title, author, md_content )
+                            onClick={ (e) => {
+                                    e.preventDefault()
+                                    EditorSendRes( props.resUrl, title, author, md_content )
+                                    router.push( props.redUrl )
                                 } }>
                             Save Changes
                         </button>

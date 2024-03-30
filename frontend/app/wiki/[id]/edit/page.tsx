@@ -10,6 +10,7 @@ export default async function ArticleEdit({ params }: { params: { id: string } }
 
     const id = params.id
     const res_url: string = BASE_URL + 'wiki/' + id + "/edit"
+    const red_url: string = '/wiki/' + id
 
     const getMarkdown = async () => {
 
@@ -26,6 +27,7 @@ export default async function ArticleEdit({ params }: { params: { id: string } }
     return (
         <Editor
             resUrl = { res_url } 
+            redUrl = { red_url }
             initTitle = { data.title }
             initAuthor = { data.author }
             initMD = { data.md_content }
