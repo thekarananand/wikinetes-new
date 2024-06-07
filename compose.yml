@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+
+  frontend:
+    container_name: wikinetes-frontend
+    build: ./frontend
+    ports:
+      - 80:3000
+    depends_on:
+      - database
+      - backend
+
+  backend:
+    container_name: wikinetes-backend
+    build: ./backend
+    ports:
+      - 81:8000
+    depends_on:
+      - database
+
+  database:
+    container_name: mongo
+    image: mongo
+    ports:
+      - 82:27017
+
