@@ -3,6 +3,8 @@
 backend/core/__pycache__
 backend/api/__pycache__
 
+backend/api/migrations
+
 ### frontend --------------------------------------------------
 
 # dependencies
