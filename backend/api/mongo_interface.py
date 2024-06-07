@@ -4,7 +4,7 @@ from bson.objectid import ObjectId
 from .md2html import md2html
 
 # Create/Access MongoClient to connect to Mongo Container
-mongo_container = pymongo.MongoClient( 'localhost' , 80 )
+mongo_container = pymongo.MongoClient( 'mongo' , 27017 )
 
 # Create/Access DB named wikinetes
 db_wikinetes = mongo_container["wikinetes"]
@@ -29,7 +29,7 @@ def fetch_article_list():
 
         list_entry = {}
 
-        id = str(article['_id'])
+        id= str(article['_id'])
         title = article['title']
         author = article['author']
 
@@ -74,3 +74,20 @@ def fetch_article_edit(id):
     markdown = col_articles.find_one( query, projection )
 
     return(markdown)
+
+def update_article(id, new_values):
+
+    query = { '_id': ObjectId(id) }
+
+    projection = {
+        '_id': False,
+        'title': True,
+        'author': True,
+        'md_content': True,
+    }
+
+    old = col_articles.find_one( query, projection)
+
+    new = { "$set": new_values }
+
+    col_articles.update_one(old, new)

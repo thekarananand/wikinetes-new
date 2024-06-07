@@ -6,7 +6,11 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from .serializers import serialize_article_list, serialize_article_view, serialize_article_edit
-from .mongo_interface import fetch_article_list, fetch_article_view, fetch_article_edit
+from .mongo_interface import fetch_article_list, fetch_article_view, fetch_article_edit, update_article
+
+@api_view(['GET'])
+def ping(request):
+    return Response( {'ping': 'pong'} )
 
 @api_view(['GET'])
 def article_list(request):
@@ -33,9 +37,9 @@ def article_edit(request, id):
         article_edit_data = serialize_article_edit( data=request.data )
         print(request.data)
         if article_edit_data.is_valid():
-            print(article_edit_data.data)
+            update_article(id, article_edit_data.data)
             return Response(article_edit_data.data, status=status.HTTP_201_CREATED)
-        return Response(article_edit_data.errors, status=status.HTTP_201_CREATED)
+        # return Response(article_edit_data.errors, status=status.HTTP_201_CREATED)
         return Response(article_edit_data.errors, status=status.HTTP_400_BAD_REQUEST)
     
     # Response(markdown.error)
