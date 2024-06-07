@@ -5,11 +5,12 @@ import "@/styles/readable-article.css";
 // Next Component
 import Link from "next/link";
 
-const BASE_URL: string = "http://127.0.0.1:8000/";
+// Variable Imports
+import BaseUrl from "@/variable/BaseUrl"
 
 async function getArticle(id: number) {
 
-    const res = await fetch(BASE_URL + 'wiki/' + String(id) + "?format=json");
+    const res = await fetch( `${BaseUrl}/wiki/${id}/` , { cache: 'no-store' } );
     
     if (!res.ok) {
         throw new Error("Failed to fetch data");

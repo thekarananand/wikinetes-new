@@ -7,11 +7,12 @@ import Link from "next/link";
 
 import { inter } from '@/font/inter.js';
 
-const BASE_URL: string = "http://127.0.0.1:8000/";
+// Variable Imports
+import BaseUrl from "@/variable/BaseUrl"
 
 const getArticlesList = async () => {
 
-    const res = await fetch(BASE_URL + "?format=json");
+    const res = await fetch( `${BaseUrl}/`, { cache: 'no-store' } );
     
     if (!res.ok) {
         throw new Error("Failed to fetch data");
@@ -43,7 +44,7 @@ const ArticleList = (list: any) => {
                 <div>
                     <h2>Hot Articles</h2>
                     <ul className="grid">
-                        { list.map( ( article: object, index: number ) => (
+                        { list.map( ( article:{id:string, title:string, author:string}, index: number ) => (
                             <li key={index}>
                                 <Link href={'./wiki/' + article.id}>
                                     <h3 className="title">{article.title}</h3>
