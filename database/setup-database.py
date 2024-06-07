@@ -1,6 +1,6 @@
 import pymongo
 
-# Create/Access MongoClient to connect to Mongo Contianer
+# Create/Access MongoClient to connect to Mongo Container
 mongo_container = pymongo.MongoClient( 'localhost' , 82 )
 
 # Create/Access DB named wikinetes
